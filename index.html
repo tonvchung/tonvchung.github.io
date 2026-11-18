@@ -17,10 +17,8 @@
   <title>Tonvchung — 两个顺手的 Edge 扩展</title>
 </head>
 <body id="top">
-  <a class="skip-link" href="#main">跳到主要内容</a>
-
   <header class="site-header">
-    <div class="shell navigation">
+    <div class="navigation">
       <a class="brand" href="#top" aria-label="Tonvchung 首页">
         <img src="./assets/favicon.svg" width="28" height="28" alt="">
         <span>tonvchung</span>
@@ -32,63 +30,49 @@
     </div>
   </header>
 
-  <main id="main" class="shell">
-    <section class="hero" aria-labelledby="hero-title">
-      <p class="eyebrow">EDGE ADD-ONS · OPEN SOURCE</p>
-      <h1 id="hero-title">两个自己常用的<br>Edge 小工具。</h1>
-      <p class="hero-description">一个用来调接口，一个用来整理 JSON 和 XML。最早是写给自己用的，现在把代码也分享出来。</p>
-      <a class="hero-link" href="#projects">看看项目 <span aria-hidden="true">↓</span></a>
-    </section>
+  <main id="projects">
+    <h1 class="sr-only">Tonvchung 的开源项目</h1>
+    <div class="project-list">
+      <article class="project" aria-labelledby="api-title">
+        <div class="project-heading">
+          <img src="./assets/local-api-studio.png" width="56" height="56" alt="Local API Studio 图标">
+          <div>
+            <h2 id="api-title">Local API Studio</h2>
+            <p>API 调试工具</p>
+          </div>
+        </div>
+        <p class="project-description">在 Edge 里发送 HTTP 请求，管理集合、环境变量和历史记录。支持请求前后脚本，也可以导入 Postman 数据。</p>
+        <div class="project-footer">
+          <div class="project-links">
+            <a href="https://github.com/tonvchung/local-api-studio" target="_blank" rel="noopener noreferrer">源代码 ↗</a>
+            <a href="https://microsoftedge.microsoft.com/addons/detail/local-api-studio/mjbkjnidkalfpkmahkbnmlcddomehkan" target="_blank" rel="noopener noreferrer">Edge 商店 ↗</a>
+          </div>
+          <a class="version-link" href="https://github.com/tonvchung/local-api-studio/releases/tag/v1.2.0" target="_blank" rel="noopener noreferrer">v1.2.0</a>
+        </div>
+      </article>
 
-    <section class="projects-section" id="projects" aria-labelledby="projects-title">
-      <h2 id="projects-title">开源项目</h2>
-      <div class="project-list">
-        <article class="project" aria-labelledby="api-title">
-          <div class="project-heading">
-            <img src="./assets/local-api-studio.png" width="56" height="56" alt="Local API Studio 图标">
-            <div>
-              <h3 id="api-title">Local API Studio</h3>
-              <p>API 调试工具</p>
-            </div>
+      <article class="project" aria-labelledby="document-title">
+        <div class="project-heading">
+          <img src="./assets/structured-document-workbench.png" width="56" height="56" alt="结构化文档工作台图标">
+          <div>
+            <h2 id="document-title">结构化文档工作台</h2>
+            <p>JSON / XML 格式化工具</p>
           </div>
-          <p class="project-description">在 Edge 里发送 HTTP 请求，管理集合、环境变量和历史记录。支持请求前后脚本，也可以导入 Postman 数据。</p>
-          <div class="project-footer">
-            <div class="project-links">
-              <a href="https://github.com/tonvchung/local-api-studio" target="_blank" rel="noopener noreferrer">源代码 ↗</a>
-              <a href="https://microsoftedge.microsoft.com/addons/detail/local-api-studio/mjbkjnidkalfpkmahkbnmlcddomehkan" target="_blank" rel="noopener noreferrer">Edge 商店 ↗</a>
-            </div>
-            <a class="version-link" href="https://github.com/tonvchung/local-api-studio/releases/tag/v1.2.0" target="_blank" rel="noopener noreferrer">v1.2.0</a>
+        </div>
+        <p class="project-description">粘贴 JSON、XML 或混着日志的文本，就能提取并格式化。支持文档树、搜索、复制，以及最近 20 次历史记录。</p>
+        <div class="project-footer">
+          <div class="project-links">
+            <a href="https://github.com/tonvchung/structured-document-workbench" target="_blank" rel="noopener noreferrer">源代码 ↗</a>
+            <a href="https://microsoftedge.microsoft.com/addons/detail/%E7%BB%93%E6%9E%84%E5%8C%96%E6%96%87%E6%A1%A3%E5%B7%A5%E4%BD%9C%E5%8F%B0/lgappabghgabcpnpbbliphfhdceioflp" target="_blank" rel="noopener noreferrer">Edge 商店 ↗</a>
           </div>
-        </article>
-
-        <article class="project" aria-labelledby="document-title">
-          <div class="project-heading">
-            <img src="./assets/structured-document-workbench.png" width="56" height="56" alt="结构化文档工作台图标">
-            <div>
-              <h3 id="document-title">结构化文档工作台</h3>
-              <p>JSON / XML 格式化工具</p>
-            </div>
-          </div>
-          <p class="project-description">粘贴 JSON、XML 或混着日志的文本，就能提取并格式化。支持文档树、搜索、复制，以及最近 20 次历史记录。</p>
-          <div class="project-footer">
-            <div class="project-links">
-              <a href="https://github.com/tonvchung/structured-document-workbench" target="_blank" rel="noopener noreferrer">源代码 ↗</a>
-              <a href="https://microsoftedge.microsoft.com/addons/detail/%E7%BB%93%E6%9E%84%E5%8C%96%E6%96%87%E6%A1%A3%E5%B7%A5%E4%BD%9C%E5%8F%B0/lgappabghgabcpnpbbliphfhdceioflp" target="_blank" rel="noopener noreferrer">Edge 商店 ↗</a>
-            </div>
-            <a class="version-link" href="https://github.com/tonvchung/structured-document-workbench/releases/tag/v1.0.0" target="_blank" rel="noopener noreferrer">v1.0.0</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <aside class="local-note" aria-label="使用说明">
-      <h2>不用注册，数据留在本机。</h2>
-      <p>两个扩展都不需要账号。Local API Studio 只在你点击发送时发出请求；两个项目的代码均采用 MIT 协议，可以自己修改和打包。</p>
-    </aside>
+          <a class="version-link" href="https://github.com/tonvchung/structured-document-workbench/releases/tag/v1.0.0" target="_blank" rel="noopener noreferrer">v1.0.0</a>
+        </div>
+      </article>
+    </div>
   </main>
 
   <footer class="site-footer">
-    <div class="shell footer-content">
+    <div class="footer-content">
       <span>© 2026 Tonvchung</span>
       <a href="https://github.com/tonvchung?tab=repositories" target="_blank" rel="noopener noreferrer">更多项目 ↗</a>
     </div>
