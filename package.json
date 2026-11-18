@@ -1,0 +1,1 @@
+{"name":"tonvchung-homepage","private":true,"version":"2.0.0","type":"module","scripts":{"dev":"node scripts/dev-server.mjs"}}
