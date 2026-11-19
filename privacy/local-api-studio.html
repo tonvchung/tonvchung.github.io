@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy - Local API Studio</title>
+<style>
+  body {
+    font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+    line-height: 1.7;
+    color: #24292f;
+    background: #ffffff;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  h1 { font-size: 1.8em; border-bottom: 1px solid #d0d7de; padding-bottom: .3em; }
+  h2 { font-size: 1.25em; margin-top: 1.6em; }
+  .meta { color: #57606a; font-size: .9em; margin-bottom: 2em; }
+  .lang-divider { border: none; border-top: 2px solid #d0d7de; margin: 3em 0; }
+  ul { padding-left: 1.4em; }
+  a { color: #0969da; }
+</style>
+<base target="_blank">
+</head>
+<body>
+
+<h1>Privacy Policy &mdash; Local API Studio</h1>
+<p class="meta">Last updated: November 19, 2026 &middot; Applies to the Local API Studio browser extension (Chrome Web Store and Microsoft Edge Add-ons)</p>
+
+<h2>1. Overview</h2>
+<p>Local API Studio ("the extension") is a local API development and testing tool. This privacy policy explains what data the extension handles and how. The short version: <strong>the extension collects no personal information and transmits nothing to the developer.</strong> All workspace data stays on your own device.</p>
+
+<h2>2. Data Storage &mdash; Local Only</h2>
+<p>All data created in the extension (collections, environments, scripts, request history, cached requests and responses, drafts) is stored exclusively in your browser's local storage (<code>chrome.storage.local</code>) on your current device. This data:</p>
+<ul>
+  <li>is never uploaded to, or accessible by, the developer;</li>
+  <li>is never synced to any developer-operated server;</li>
+  <li>is removed when you uninstall the extension or clear the extension's storage.</li>
+</ul>
+<p>The <code>unlimitedStorage</code> permission is requested only so that large API workspaces can exceed the default local storage quota. It changes only the local quota &mdash; it does not enable any data transmission.</p>
+
+<h2>3. Network Requests</h2>
+<p>The extension sends HTTP/HTTPS requests <strong>only</strong> to API addresses that you explicitly type into the request URL field, and <strong>only</strong> after you press the Send button. These requests:</p>
+<ul>
+  <li>are initiated by you, never automatically or in the background;</li>
+  <li>contain only data you have entered (URL, headers, body) plus standard browser-added headers;</li>
+  <li>go directly from your browser to the endpoint you specified &mdash; they are not routed through, logged by, or visible to the developer.</li>
+</ul>
+<p>The extension does not monitor, record, or collect your general web browsing traffic.</p>
+
+<h2>4. webRequest Usage</h2>
+<p>The <code>webRequest</code> permission is used in a non-blocking, observe-only mode solely to display the actual response headers of requests that the extension itself initiated, so you can distinguish extension-configured headers from browser-added ones. The listener ignores requests from ordinary web pages and other extensions, and never modifies, blocks, or redirects any request.</p>
+
+<h2>5. No Third-Party Services</h2>
+<p>The extension contains:</p>
+<ul>
+  <li>no analytics, tracking, or advertising;</li>
+  <li>no remote code &mdash; all code ships inside the extension package;</li>
+  <li>no accounts, no identity features, no cookies;</li>
+  <li>no transmission of user data to the developer or any third party.</li>
+</ul>
+<p>User-authored scripts are executed only inside the extension's declared local sandbox when you press Send, with no access to network APIs, cookies, account data, or extension storage.</p>
+
+<h2>6. Data We Do Not Collect</h2>
+<p>The developer does not collect, store, or process any of the following: personal identity information, health information, financial information, authentication information, personal communications, location, browsing history, user activity, or website content.</p>
+
+<h2>7. Changes to This Policy</h2>
+<p>If the extension's behavior changes in a way that affects this policy, this page will be updated before the corresponding version is published, with a revised "last updated" date.</p>
+
+<h2>8. Contact</h2>
+<p>For any questions about this privacy policy, you can reach the developer through the support/contact channel listed on the extension's store listing page.</p>
+
+<hr class="lang-divider">
+
+<h1>隐私政策 &mdash; Local API Studio</h1>
+<p class="meta">最后更新日期：2026 年 11 月 19 日 &middot; 适用于 Local API Studio 浏览器扩展（Chrome 网上应用店及 Microsoft Edge 加载项）</p>
+
+<h2>1. 概述</h2>
+<p>Local API Studio（以下简称"本扩展"）是一个本地 API 开发与测试工具。本政策说明扩展处理哪些数据以及如何处理。简而言之：<strong>本扩展不收集任何个人信息，也不向开发者传输任何数据。</strong>所有工作区数据均保存在您自己的设备上。</p>
+
+<h2>2. 数据存储 &mdash; 仅保存在本地</h2>
+<p>扩展中创建的所有数据（集合、环境变量、脚本、请求历史、缓存的请求与响应、草稿）仅存储在您当前设备的浏览器本地存储（<code>chrome.storage.local</code>）中。这些数据：</p>
+<ul>
+  <li>不会上传给开发者，开发者也无法访问；</li>
+  <li>不会同步到任何由开发者运营的服务器；</li>
+  <li>在您卸载扩展或清除扩展存储时被删除。</li>
+</ul>
+<p>申请 <code>unlimitedStorage</code> 权限仅用于让大型 API 工作区突破默认本地存储配额，仅改变本地配额，不会开启任何数据传输能力。</p>
+
+<h2>3. 网络请求</h2>
+<p>扩展<strong>仅</strong>向您手动输入到请求地址栏中的 API 地址发送 HTTP/HTTPS 请求，且<strong>仅在</strong>您点击"发送"按钮后发出。这些请求：</p>
+<ul>
+  <li>由您主动发起，绝不自动发送或在后台运行；</li>
+  <li>仅包含您输入的内容（URL、请求头、请求体）以及浏览器自动附加的标准请求头；</li>
+  <li>由您的浏览器直接发往您指定的地址，不经过、不记录于、也不对开发者可见。</li>
+</ul>
+<p>扩展不会监视、记录或收集您的日常网页浏览流量。</p>
+
+<h2>4. webRequest 的使用</h2>
+<p><code>webRequest</code> 权限以非阻塞、只读方式使用，唯一用途是显示扩展自身发起的请求的实际响应头，便于您区分扩展配置的请求头与浏览器附加的请求头。监听器会忽略普通网页和其他扩展的请求，绝不修改、拦截或重定向任何请求。</p>
+
+<h2>5. 无第三方服务</h2>
+<p>本扩展：</p>
+<ul>
+  <li>不含任何分析、跟踪或广告；</li>
+  <li>不含远程代码，所有代码均随扩展包发布；</li>
+  <li>不含账号体系、身份功能，不使用 Cookie；</li>
+  <li>不向开发者或任何第三方传输用户数据。</li>
+</ul>
+<p>用户编写的脚本仅在您点击发送时，于扩展声明的本地沙箱中执行，无法访问网络 API、Cookie、账号数据或扩展存储。</p>
+
+<h2>6. 我们不收集的数据</h2>
+<p>开发者不收集、存储或处理以下任何信息：个人身份信息、健康信息、财务信息、身份验证信息、个人通讯、位置信息、浏览历史、用户活动记录或网站内容。</p>
+
+<h2>7. 政策变更</h2>
+<p>若扩展行为发生影响本政策的变化，将在对应版本发布前更新本页面，并更新"最后更新日期"。</p>
+
+<h2>8. 联系方式</h2>
+<p>如对本隐私政策有任何疑问，可通过扩展商店页面中列出的支持/联系渠道与开发者联系。</p>
+
+</body>
+</html>
